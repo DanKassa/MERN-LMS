@@ -52,16 +52,16 @@ const AdminDashboard = () => {
         <>
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <AppBar open={open} position='absolute'>
+                <AppBar open={open} position='absolute' sx={{ backgroundColor:'white'}}>
                     <Toolbar sx={{ pr: '24px' }}>
                         <IconButton
                             edge="start"
-                            color="inherit"
+                            // color="inherit"
                             aria-label="open drawer"
                             onClick={toggleDrawer}
                             sx={{
                                 marginRight: '36px',
-                                ...(open && { display: 'none' }),
+                                ...(open && { display: 'none' ,textColor:'grey' }),
                             }}
                         >
                             <MenuIcon />
@@ -69,11 +69,11 @@ const AdminDashboard = () => {
                         <Typography
                             component="h1"
                             variant="h6"
-                            color="inherit"
+                            // color="inherit"
                             noWrap
-                            sx={{ flexGrow: 1 }}
+                            sx={{ flexGrow: 1 ,color:'grey'}}
                         >
-                            Admin Dashboard
+                            Director's Dashboard
                         </Typography>
                         <AccountMenu />
                     </Toolbar>
@@ -161,7 +161,8 @@ const styles = {
         px: [1],
     },
     drawerStyled: {
-        display: "flex"
+        display: "flex",
+
     },
     hideDrawer: {
         display: 'flex',

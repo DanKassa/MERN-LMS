@@ -67,7 +67,7 @@ const StudentComplain = () => {
                 >
                     <div>
                         <Stack spacing={1} sx={{ mb: 3 }}>
-                            <Typography variant="h4">Complain</Typography>
+                            <Typography variant="h4">Write your Complain Here.</Typography>
                         </Stack>
                         <form onSubmit={submitHandler}>
                             <Stack spacing={3}>
